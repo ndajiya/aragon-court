@@ -68,6 +68,10 @@ contract HexSumTreePublic {
         return tree.get(l, key);
     }
 
+    function getPastItem(uint256 key, uint64 blockNumber) public view returns (uint256) {
+        return tree.getPastItem(key, blockNumber);
+    }
+
     function totalSum() public view returns (uint256) {
         return tree.totalSum();
     }
